@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Poppins", sans-serif;
+    background-color: pink;
+    color: white;
+    overflow-x: hidden;
+}
+
+.accueil{
+   position: relative;
+   display: flex;
+   flex-direction: column; 
+   justify-content: space-between;
+   width: 100vw;
+   height: 100vh;
+   padding: 2vh 1vw;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_a_propos_lien{
+    height: 5vh;
+    padding: 0.75ch 1.5vw;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nav_a_propos_lien:hover{
+    background-color: white;
+    color: pink;
+}
+
+.nav_projets_lien{
+    height: 5vh;
+    padding: 0.75ch 1.5vw;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nav_projets_lien:hover{
+    background-color: white;
+    color: pink;
+}
+
+.nav_contact_lien{
+    height: 5vh;
+    padding: 0.75ch 1.5vw;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nav_contact_lien:hover{
+    background-color: white;
+    color: pink;
+}
+
+.titre{
+    display: flex;
+    flex: 1;
+    justify-content:center;
+    align-items: center;
+    font-family: "Anton", sans-serif;
+    font-size: 5vw;
+}
+
+.a_propos{
+    position: relative;
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vh 2vw;
+}
+.a_propos img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter:brightness(0.5);
+}
+
+.a_propos_span{
+    z-index: 1;
+    margin-left: 2vw;
+    font-weight: bold;
+    font-size:1.5vw ;
+}
+
+.a_propos_contenu{
+    z-index: 1;
+    margin-bottom: -30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vh ;
+}
+
+.a_propos_titre{
+    width: 95%;
+    display: flex;
+    gap: 4vw;
+    text-transform: uppercase;
+}
+
+.a_propos_para{
+    font-size: 1.5vw;
+    width: 95%;
+}
+
+.skills{
+    z-index: 1;
+    padding: 0 2.5%;
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.2vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.projets{
+    position:relative;
+    background-color: white;
+    height:auto;
+    width: 100vw;
+    display: flex;
+    flex-direction:row;
+    padding: 2vh 1vw;
+    color: pink;
+}
+
+.projets span{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+    font-size: 4vw;
+    letter-spacing: 1vw;
+    padding-right: 3vw;
+}
+
+.mot_dong_projet{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    padding-left: 5px;
+    gap: 2vw;
+} 
+
+.projet_1, .projet_2{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    height: 35vh;
+    width: 100vw;
+}
+
+.projet_1 img, .projet_2 img {
+    height: 35vh;
+    width: 25vw;
+    object-fit: cover;
+    border-radius:20px ;
+}
+.mo_ta_projet{
+    height: auto;
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px ;
+}
+
+.titre_projet {
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+    font-size: 1.7vw;
+}
+.contenu_projet {
+    text-align: justify;
+    font-size: 1.5vw;
+}
+
+.pied{
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    padding: 0 10vw;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+.Thuc_Anh{
+    font-size: 50px;
+    font-family: "Anton", sans-serif;
+    line-height: 1.5;
+
+}
+.contact_titre {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "Anton", sans-serif;
+}
+.contact_contenu{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contact_contenu span:hover{
+    text-decoration: underline;
+}
+
+
