@@ -17,12 +17,12 @@
             <Span class="nav_contact_lien">Contact</Span>
         </nav>
         <span class="titre">
-            Bonjour, je suis Thuc Anh HOANG hihi
+            Bonjour, je suis Thuc Anh HOANG
         </span>
     </div>
 
-    <div class="a_propos">
-        <img src="Thucanh.jpg"/>
+    <div class="a_propos" id = "a_propos">
+        <img src="Thucanh.jpg" />
         <span class="a_propos_span">Qui suis-je ?</span>
         <div class="a_propos_contenu">
             <div class="a_propos_titre">
@@ -30,7 +30,12 @@
                 <span>Mes compétences</span>
             </div>
             <div class="a_propos_para">
-                Passionnée par les mathématiques et la logique, mes premiers pas dans des langages de programmation ont renforcé mon envie d’apprendre et de progresser dans ce domaine. Curieuse et motivée, je souhaite développer mes compétences en programmation et en développement d’applications pour participer à des projets informatiques concrets.
+                En tant qu'étudiante en Techniques de Commercialisation, j'ai toujours été passionnée par la résolution
+                de problèmes. Ma fascination pour les mathématiques et la logique m'a naturellement conduite à explorer
+                les langages de programmation, m'orientant ainsi vers des domaines plus techniques. Ces premiers pas ont
+                renforcé mon envie d'apprendre et de progresser dans cette voie. Curieuse et motivée, je souhaite
+                approfondir mes compétences en programmation et en développement d'applications afin de participer
+                activement à des projets informatiques concrets.
             </div>
         </div>
 
@@ -47,50 +52,71 @@
         </div>
     </div>
 
-    <div class="projets">
+    <div class="projets" id="projets">
         <Span>Mes projets</Span>
         <div class="mot_dong_projet">
             <div class="projet_1">
-                <img src="Thucanh.jpg"/>
+                <img src="DHDN.png" />
                 <div class="mo_ta_projet">
-                    <div class="titre_projet">đây là phần titre nhé</div>
-                    <div class="contenu_projet">đây là vùng để có thể mô tả cái projet nhưng chưa nghĩ ra nên viết tạm tạm</div>
+                    <div class="titre_projet">Minuteur</div>
+                    <div class="contenu_projet">Minuteur développé en Python avec la bibliothèque Pygame, intégrant des
+                        fonctionnalités d’augmentation et de diminution du temps, de démarrage et de réinitialisation.
+                        Ce projet m’a permis de développer ma logique de programmation et la conception d’une interface
+                        simple</div>
                 </div>
             </div>
-            
+
             <div class="projet_2">
                 <div class="mo_ta_projet">
-                    <div class="titre_projet">đây là phần titre nhé</div>
-                    <div class="contenu_projet">đây là vùng để có thể mô tả cái projet nhưng chưa nghĩ ra nên viết tạm tạm xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxx</div>
+                    <div class="titre_projet">Stratégie événementielle – Piscine Global</div>
+                    <div class="contenu_projet">Projet de marketing événementiel autour du salon Piscine Global :
+                        conception d’une stratégie complète de stand allant de l’analyse de la cible de la concurrence
+                        et des objectifs à la création de l’espace avec des plans 2D et 3D et son aménagement jusqu’au
+                        plan de communication et au rétroplanning</div>
                 </div>
-                <img src="Thucanh.jpg"/>
+                <img src="Stand-Midea.png" />
             </div>
-            
-            <div class="projet_1">
-                <img src="Thucanh.jpg"/>
+
+            <div class="projet_3">
+                <img src="Dragon god.png" />
                 <div class="mo_ta_projet">
-                    <div class="titre_projet">đây là phần titre nhé</div>
-                    <div class="contenu_projet">đây là vùng để có thể mô tả cái projet nhưng chưa nghĩ ra nên viết tạm tạm</div>
+                    <div class="titre_projet">Stratégie marketing mix - Boisson énergétique</div>
+                    <div class="contenu_projet">Projet de lancement d’une boisson énergétique basé sur une stratégie
+                        marketing mix 4P incluant l’analyse du marché, le produit, le prix, la distribution et la
+                        communication</div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="pied">
-            <Span class="Thuc_Anh">
-                Thuc Anh
-                <br>
-                Hoang 
-            </Span>
-            <div class="contact">
-                <span class="contact_titre">Contactez-moi</span>
-                <div class="contact_contenu">
-                    <span>thucanhhoang0212@gmail.com</span>
-                    <span>www.linkedin.com/in/thucanhhoang</span>
-                    <span>+33 7 65 69 86 47</span>
-                </div>
+    <div class="pied" id="pied">
+        <Span class="Thuc_Anh">
+            Thuc Anh
+            <br>
+            Hoang
+        </Span>
+        <div class="contact">
+            <span class="contact_titre">Contactez-moi</span>
+            <div class="contact_contenu">
+                <span>thucanhhoang0212@gmail.com</span>
+                <span>www.linkedin.com/in/thucanhhoang</span>
+                <span>+33 7 65 69 86 47</span>
             </div>
+        </div>
     </div>
+
+    <script>
+    document.querySelector('.nav_a_propos_lien').addEventListener('click', function() {
+        document.getElementById('a_propos').scrollIntoView({ behavior: 'smooth' });
+    });
+    document.querySelector('.nav_projets_lien').addEventListener('click', function() {
+        document.getElementById('projets').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.querySelector('.nav_contact_lien').addEventListener('click', function() {
+        document.getElementById('pied').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
 </body>
 
 </html>
